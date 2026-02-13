@@ -151,7 +151,25 @@ app_caps:
     "platformVersion": "10"
     "app": "APP_URL"   #Add the app (.apk) url here
 ```
+**W3C Capabilities**
 
+```bash
+    caps = {
+      "platformName" => "Android",
+      "appium:deviceName" => "Galaxy S24",
+      "appium:platformVersion" => "14",
+      "appium:app" => "lt://proverbial-android",
+      "appium:isRealMobile" => true,
+      "appium:automationName" => "UiAutomator2",
+      "lt:options" => {
+        "user" => username,
+        "accessKey" => accessToken,
+        "build" => "RSpec-Android-Build",
+        "name" => "RSpec Sample Test",
+        "w3c" => true
+      }
+    }
+```
 </TabItem>
 
 </Tabs>
@@ -172,7 +190,7 @@ bundle install
 2. Execute the following command to run single test on LambdaTest platform:
 
 ```bash
-bundle exec rake single
+bundle exec rspec spec/app_automation.rb
 ```
 
 > In order to run parallel tests, run `bundle exec rake parallel`.

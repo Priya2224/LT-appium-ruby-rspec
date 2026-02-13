@@ -8,8 +8,8 @@ RSpec.configure do |config|
 
     caps = {
       "platformName" => "Android",
-      "appium:deviceName" => "Galaxy S21 5G",
-      "appium:platformVersion" => "11",
+      "appium:deviceName" => "Galaxy S24",
+      "appium:platformVersion" => "14",
       "appium:app" => "lt://proverbial-android",
       "appium:isRealMobile" => true,
       "appium:automationName" => "UiAutomator2",
